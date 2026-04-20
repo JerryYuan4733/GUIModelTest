@@ -1,0 +1,46 @@
+[
+  {
+    "model": "qwen3.6-plus",
+    "test_id": "POS_001a",
+    "test_name": "单个图标定位(右侧详情面板)",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 2.049,
+    "usage": {
+      "prompt_tokens": 896,
+      "completion_tokens": 38,
+      "total_tokens": 934
+    },
+    "content": "<points x1=\"923\" y1=\"97\" alt=\"频道详情面板顶部的圆形大头像\">频道详情面板顶部的圆形大头像</points>",
+    "thinking_content": "",
+    "evaluation": {
+      "accuracy": null,
+      "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)",
+      "coordinate_eval": {
+        "predictions_count": 1,
+        "gt_count": 1,
+        "point_in_bbox_hits": 1,
+        "point_hit_rate": 1.0,
+        "gt_coverage_rate": 1.0,
+        "mean_iou": null,
+        "matches": [
+          {
+            "pred_index": 0,
+            "pred_center": [
+              923,
+              97
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 0,
+            "matched_gt_label": "League of Legends Community (right panel)",
+            "iou": null
+          }
+        ],
+        "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)"
+      }
+    },
+    "marked_image": "E:\\MyCode3\\ARKAPITEST\\output\\POS_001a_qwen3_6-plus_marked.png"
+  }
+]

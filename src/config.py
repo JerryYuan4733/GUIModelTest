@@ -147,6 +147,16 @@ MODELS: dict[str, ModelConfig] = {
         output_format="qwen_point",
         vl_high_resolution=True,
     ),
+    # Qwen3.6-Plus：Qwen3.6 原生视觉语言 Plus 模型（综合能力最强）
+    # https://bailian.console.aliyun.com/cn-beijing/?tab=model#/model-market/detail/qwen3.6-plus
+    "qwen3.6-plus": ModelConfig(
+        name="qwen3.6-plus",
+        supports_thinking=True,
+        display_name="qwen3.6-plus",
+        provider="dashscope",
+        output_format="qwen_point",
+        vl_high_resolution=True,
+    ),
     "gui-plus-2026-02-26": ModelConfig(
         name="gui-plus-2026-02-26",
         supports_thinking=True,

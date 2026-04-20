@@ -1,0 +1,34 @@
+[
+  {
+    "model": "qwen3.6-plus",
+    "test_id": "POS_001a",
+    "test_name": "单个图标定位(右侧详情面板)",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 4.373,
+    "usage": {
+      "prompt_tokens": 896,
+      "completion_tokens": 82,
+      "total_tokens": 978
+    },
+    "content": "<points x1=\"925\" y1=\"97\" alt=\"右侧的频道详情面板顶部，'League of Legends Community' 这个频道的圆形大头像的位置（紫色背景，位于订阅数上方）\">右侧的频道详情面板顶部，'League of Legends Community' 这个频道的圆形大头像的位置（紫色背景，位于订阅数上方）</points>",
+    "thinking_content": "",
+    "evaluation": {
+      "accuracy": null,
+      "details": "未解析到任何 <point> 坐标",
+      "coordinate_eval": {
+        "predictions_count": 0,
+        "gt_count": 1,
+        "point_in_bbox_hits": 0,
+        "point_hit_rate": 0.0,
+        "gt_coverage_rate": 0.0,
+        "mean_iou": null,
+        "matches": [],
+        "details": "未解析到任何 <point> 坐标"
+      }
+    },
+    "marked_image": null
+  }
+]

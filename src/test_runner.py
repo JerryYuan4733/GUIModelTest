@@ -556,8 +556,13 @@ class TestRunner:
         for raw in re.findall(r"<box>([^<]+?)</box>", content, flags=re.IGNORECASE):
             _append_from_nums([int(n) for n in re.findall(r"-?\d+", raw)])
 
-        # 格式 D：<point x1=".." y1=".." [x2=".." y2=".."] /> 自闭合属性（qwen3-vl-32b-instruct）
-        attr_tag_pattern = r"<point\b([^>]*?)/?\s*>"
+        # 格式 D：<point[s] x1=".." y1=".." [x2=".." y2=".."] [...]> 属性版
+        # 兼容变体：
+        #   - <point x1=".." y1=".." />         qwen3-vl-32b-instruct 自闭合
+        #   - <points x1=".." y1=".." alt="..">描述</points>  qwen3.6-plus 复数+非自闭合
+        # 注意：必须在格式 A/B/C（`<point>数字</point>`）之前/之后均不冲突，
+        #   只要属性字符串中含 '='（如 x1="925"）才进入本分支，避免误判纯数字包裹。
+        attr_tag_pattern = r"<points?\b([^>]*?)/?\s*>"
         for attrs in re.findall(attr_tag_pattern, content, flags=re.IGNORECASE):
             if "=" not in attrs:
                 continue

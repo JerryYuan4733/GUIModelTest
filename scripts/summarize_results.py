@@ -32,8 +32,19 @@ def _display(model_name: str) -> str:
 
 
 def main() -> int:
-    result_file = _latest_results()
-    data = json.loads(result_file.read_text(encoding="utf-8"))
+    # 支持 CLI 传入结果文件路径；默认取最新；可传入多个实现补跑合并
+    if len(sys.argv) > 1:
+        files = [Path(p) for p in sys.argv[1:]]
+    else:
+        files = [_latest_results()]
+    # 合并多个 JSON：后续文件中的 (model, test_id, thinking_applied) 覆盖前面
+    data_map: dict = {}
+    for f in files:
+        for row in json.loads(f.read_text(encoding="utf-8")):
+            key = (row.get("model"), row.get("test_id"), row.get("thinking_applied"))
+            data_map[key] = row
+    data = list(data_map.values())
+    result_file = files[-1]
     print(f"# 结果文件: {result_file.name}\n")
     print(f"总条数: {len(data)}\n")
 
