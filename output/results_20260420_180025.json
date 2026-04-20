@@ -1,0 +1,46 @@
+[
+  {
+    "model": "qwen3-vl-32b-instruct",
+    "test_id": "POS_004",
+    "test_name": "搜索输入框定位(点击输入框)",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 1.467,
+    "usage": {
+      "prompt_tokens": 1898,
+      "completion_tokens": 17,
+      "total_tokens": 1915
+    },
+    "content": "<point x1=\"204\" y1=\"59\" />",
+    "thinking_content": "",
+    "evaluation": {
+      "accuracy": null,
+      "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)",
+      "coordinate_eval": {
+        "predictions_count": 1,
+        "gt_count": 1,
+        "point_in_bbox_hits": 1,
+        "point_hit_rate": 1.0,
+        "gt_coverage_rate": 1.0,
+        "mean_iou": null,
+        "matches": [
+          {
+            "pred_index": 0,
+            "pred_center": [
+              204,
+              59
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 0,
+            "matched_gt_label": "Telegram Search Input Box",
+            "iou": null
+          }
+        ],
+        "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)"
+      }
+    },
+    "marked_image": "E:\\MyCode3\\ARKAPITEST\\output\\POS_004_qwen3-vl-32b-instruct_marked.png"
+  }
+]

@@ -1,0 +1,1208 @@
+[
+  {
+    "model": "doubao-seed-1-6-vision-250815",
+    "test_id": "POS_001a",
+    "test_name": "单个图标定位(右侧详情面板)",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 1.991,
+    "usage": {
+      "prompt_tokens": 1133,
+      "completion_tokens": 12,
+      "total_tokens": 1145
+    },
+    "content": "<point>925 94</point>",
+    "thinking_content": "",
+    "evaluation": {
+      "accuracy": null,
+      "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)",
+      "coordinate_eval": {
+        "predictions_count": 1,
+        "gt_count": 1,
+        "point_in_bbox_hits": 1,
+        "point_hit_rate": 1.0,
+        "gt_coverage_rate": 1.0,
+        "mean_iou": null,
+        "matches": [
+          {
+            "pred_index": 0,
+            "pred_center": [
+              925,
+              94
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 0,
+            "matched_gt_label": "League of Legends Community (right panel)",
+            "iou": null
+          }
+        ],
+        "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)"
+      }
+    },
+    "marked_image": "E:\\MyCode3\\ARKAPITEST\\output\\POS_001a_seed-1-6-vision_marked.png"
+  },
+  {
+    "model": "doubao-seed-1-6-vision-250815",
+    "test_id": "POS_001b",
+    "test_name": "单个图标定位(左侧搜索列表)",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 1.11,
+    "usage": {
+      "prompt_tokens": 1133,
+      "completion_tokens": 12,
+      "total_tokens": 1145
+    },
+    "content": "<point>14 148</point>",
+    "thinking_content": "",
+    "evaluation": {
+      "accuracy": null,
+      "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)",
+      "coordinate_eval": {
+        "predictions_count": 1,
+        "gt_count": 1,
+        "point_in_bbox_hits": 1,
+        "point_hit_rate": 1.0,
+        "gt_coverage_rate": 1.0,
+        "mean_iou": null,
+        "matches": [
+          {
+            "pred_index": 0,
+            "pred_center": [
+              14,
+              148
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 0,
+            "matched_gt_label": "League of Legends Community (left list row 1)",
+            "iou": null
+          }
+        ],
+        "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)"
+      }
+    },
+    "marked_image": "E:\\MyCode3\\ARKAPITEST\\output\\POS_001b_seed-1-6-vision_marked.png"
+  },
+  {
+    "model": "doubao-seed-1-6-vision-250815",
+    "test_id": "POS_002",
+    "test_name": "多个群组图标定位",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 5.942,
+    "usage": {
+      "prompt_tokens": 1159,
+      "completion_tokens": 275,
+      "total_tokens": 1434
+    },
+    "content": "1. League of Legends Community <point>17 148</point>\n2. Starky | League of Legends + IRL <point>17 210</point>\n3. League of Legends <point>17 274</point>\n4. League of Legends: Wild Rift <point>17 338</point>\n5. League of Legends Community Chat <point>17 402</point>\n6. League of Legends News <point>17 466</point>\n7. League Of Legends Iran <point>17 530</point>\n8. League of legends <point>17 594</point>\n9. League of legend <point>17 658</point>\n10. «League of legends» <point>17 722</point>\n11. 狂球-电邮群-频道资源 <point>17 816</point>\n12. 狂球-电邮群-频道资源 <point>17 880</point>\n13. 狂球-电邮群-频道资源 <point>17 944</point>",
+    "thinking_content": "",
+    "evaluation": {
+      "accuracy": 0.9091,
+      "found_count": 10,
+      "total_count": 11,
+      "found_groups": [
+        "League of Legends Community",
+        "Starky | League of Legends + IRL",
+        "League of Legends",
+        "League of Legends: Wild Rift",
+        "League of Legends Community Chat",
+        "League of Legends News",
+        "League Of Legends Iran",
+        "League of legend",
+        "League of legends",
+        "«League of legends»"
+      ],
+      "missed_groups": [
+        "League off Legend"
+      ],
+      "details": "识别 10/11 个群组 (准确率: 90.9%) | 点命中 10/13 (76.9%), GT覆盖 10/10 (100.0%)",
+      "coordinate_eval": {
+        "predictions_count": 13,
+        "gt_count": 10,
+        "point_in_bbox_hits": 10,
+        "point_hit_rate": 0.7692,
+        "gt_coverage_rate": 1.0,
+        "mean_iou": null,
+        "matches": [
+          {
+            "pred_index": 0,
+            "pred_center": [
+              17,
+              148
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 0,
+            "matched_gt_label": "League of Legends Community",
+            "iou": null
+          },
+          {
+            "pred_index": 1,
+            "pred_center": [
+              17,
+              210
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 1,
+            "matched_gt_label": "Starky | League of Legends + IRL",
+            "iou": null
+          },
+          {
+            "pred_index": 2,
+            "pred_center": [
+              17,
+              274
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 2,
+            "matched_gt_label": "League of Legends",
+            "iou": null
+          },
+          {
+            "pred_index": 3,
+            "pred_center": [
+              17,
+              338
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 3,
+            "matched_gt_label": "League of Legends: Wild Rift",
+            "iou": null
+          },
+          {
+            "pred_index": 4,
+            "pred_center": [
+              17,
+              402
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 4,
+            "matched_gt_label": "League of Legends Community Chat",
+            "iou": null
+          },
+          {
+            "pred_index": 5,
+            "pred_center": [
+              17,
+              466
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 5,
+            "matched_gt_label": "League of Legends News",
+            "iou": null
+          },
+          {
+            "pred_index": 6,
+            "pred_center": [
+              17,
+              530
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 6,
+            "matched_gt_label": "League Of Legends Iran",
+            "iou": null
+          },
+          {
+            "pred_index": 7,
+            "pred_center": [
+              17,
+              594
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 7,
+            "matched_gt_label": "League of legend",
+            "iou": null
+          },
+          {
+            "pred_index": 8,
+            "pred_center": [
+              17,
+              658
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 8,
+            "matched_gt_label": "League of legends",
+            "iou": null
+          },
+          {
+            "pred_index": 9,
+            "pred_center": [
+              17,
+              722
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 9,
+            "matched_gt_label": "«League of legends»",
+            "iou": null
+          },
+          {
+            "pred_index": 10,
+            "pred_center": [
+              17,
+              816
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": null,
+            "matched_gt_label": null,
+            "iou": null
+          },
+          {
+            "pred_index": 11,
+            "pred_center": [
+              17,
+              880
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": null,
+            "matched_gt_label": null,
+            "iou": null
+          },
+          {
+            "pred_index": 12,
+            "pred_center": [
+              17,
+              944
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": null,
+            "matched_gt_label": null,
+            "iou": null
+          }
+        ],
+        "details": "点命中 10/13 (76.9%), GT覆盖 10/10 (100.0%)"
+      }
+    },
+    "marked_image": "E:\\MyCode3\\ARKAPITEST\\output\\POS_002_seed-1-6-vision_marked.png"
+  },
+  {
+    "model": "doubao-seed-1-6-vision-250815",
+    "test_id": "POS_003",
+    "test_name": "仅群组类型定位(细粒度类型过滤)",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 3.036,
+    "usage": {
+      "prompt_tokens": 1233,
+      "completion_tokens": 113,
+      "total_tokens": 1346
+    },
+    "content": "1. League of Legends Community Chat <point>17 404</point>\n2. League Of Legends Iran <point>17 544</point>\n3. 狂球-电邮群-频道资源 <point>17 831</point>\n4. 狂球-电邮群-频道资源 <point>17 892</point>\n5. 狂球-电邮群-频道资源 <point>17 952</point>",
+    "thinking_content": "",
+    "evaluation": {
+      "accuracy": null,
+      "details": "点命中 2/5 (40.0%), GT覆盖 2/3 (66.7%)",
+      "coordinate_eval": {
+        "predictions_count": 5,
+        "gt_count": 3,
+        "point_in_bbox_hits": 2,
+        "point_hit_rate": 0.4,
+        "gt_coverage_rate": 0.6667,
+        "mean_iou": null,
+        "matches": [
+          {
+            "pred_index": 0,
+            "pred_center": [
+              17,
+              404
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 0,
+            "matched_gt_label": "League of Legends Community Chat",
+            "iou": null
+          },
+          {
+            "pred_index": 1,
+            "pred_center": [
+              17,
+              544
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 1,
+            "matched_gt_label": "League Of Legends Iran",
+            "iou": null
+          },
+          {
+            "pred_index": 2,
+            "pred_center": [
+              17,
+              831
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": null,
+            "matched_gt_label": null,
+            "iou": null
+          },
+          {
+            "pred_index": 3,
+            "pred_center": [
+              17,
+              892
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": null,
+            "matched_gt_label": null,
+            "iou": null
+          },
+          {
+            "pred_index": 4,
+            "pred_center": [
+              17,
+              952
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": null,
+            "matched_gt_label": null,
+            "iou": null
+          }
+        ],
+        "details": "点命中 2/5 (40.0%), GT覆盖 2/3 (66.7%)"
+      }
+    },
+    "marked_image": "E:\\MyCode3\\ARKAPITEST\\output\\POS_003_seed-1-6-vision_marked.png"
+  },
+  {
+    "model": "doubao-1-5-vision-pro-32k-250115",
+    "test_id": "POS_001a",
+    "test_name": "单个图标定位(右侧详情面板)",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 1.721,
+    "usage": {
+      "prompt_tokens": 1140,
+      "completion_tokens": 12,
+      "total_tokens": 1152
+    },
+    "content": "<point>875 75</point>",
+    "thinking_content": "",
+    "evaluation": {
+      "accuracy": null,
+      "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)",
+      "coordinate_eval": {
+        "predictions_count": 1,
+        "gt_count": 1,
+        "point_in_bbox_hits": 1,
+        "point_hit_rate": 1.0,
+        "gt_coverage_rate": 1.0,
+        "mean_iou": null,
+        "matches": [
+          {
+            "pred_index": 0,
+            "pred_center": [
+              875,
+              75
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 0,
+            "matched_gt_label": "League of Legends Community (right panel)",
+            "iou": null
+          }
+        ],
+        "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)"
+      }
+    },
+    "marked_image": "E:\\MyCode3\\ARKAPITEST\\output\\POS_001a_1-5-vision-pro_marked.png"
+  },
+  {
+    "model": "doubao-1-5-vision-pro-32k-250115",
+    "test_id": "POS_001b",
+    "test_name": "单个图标定位(左侧搜索列表)",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 1.783,
+    "usage": {
+      "prompt_tokens": 1140,
+      "completion_tokens": 12,
+      "total_tokens": 1152
+    },
+    "content": "<point>17 125</point>",
+    "thinking_content": "",
+    "evaluation": {
+      "accuracy": null,
+      "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)",
+      "coordinate_eval": {
+        "predictions_count": 1,
+        "gt_count": 1,
+        "point_in_bbox_hits": 1,
+        "point_hit_rate": 1.0,
+        "gt_coverage_rate": 1.0,
+        "mean_iou": null,
+        "matches": [
+          {
+            "pred_index": 0,
+            "pred_center": [
+              17,
+              125
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 0,
+            "matched_gt_label": "League of Legends Community (left list row 1)",
+            "iou": null
+          }
+        ],
+        "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)"
+      }
+    },
+    "marked_image": "E:\\MyCode3\\ARKAPITEST\\output\\POS_001b_1-5-vision-pro_marked.png"
+  },
+  {
+    "model": "doubao-1-5-vision-pro-32k-250115",
+    "test_id": "POS_002",
+    "test_name": "多个群组图标定位",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 5.095,
+    "usage": {
+      "prompt_tokens": 1166,
+      "completion_tokens": 290,
+      "total_tokens": 1456
+    },
+    "content": "1. [League of Legends Community] <point>17 128 62 188</point>\n2. [Starky | League of Legends + IRL] <point>17 200 62 260</point>\n3. [League of Legends] <point>17 272 62 332</point>\n4. [League of Legends: Wild Rift] <point>17 344 62 404</point>\n5. [League of Legends Community Chat] <point>17 416 62 476</point>\n6. [League of Legends News] <point>17 488 62 548</point>\n7. [League of Legends Iran] <point>17 560 62 620</point>\n8. [league_of_legendz] <point>17 632 62 692</point>\n9. [League of legend] <point>17 704 62 764</point>\n10. [League_of_legend1] <point>17 776 62 836</point>",
+    "thinking_content": "",
+    "evaluation": {
+      "accuracy": 0.9091,
+      "found_count": 10,
+      "total_count": 11,
+      "found_groups": [
+        "League of Legends Community",
+        "Starky | League of Legends + IRL",
+        "League of Legends",
+        "League of Legends: Wild Rift",
+        "League of Legends Community Chat",
+        "League of Legends News",
+        "League Of Legends Iran",
+        "League of legend",
+        "League of legends",
+        "«League of legends»"
+      ],
+      "missed_groups": [
+        "League off Legend"
+      ],
+      "details": "识别 10/11 个群组 (准确率: 90.9%) | 点命中 8/10 (80.0%), GT覆盖 8/10 (80.0%), 平均IoU 0.387",
+      "coordinate_eval": {
+        "predictions_count": 10,
+        "gt_count": 10,
+        "point_in_bbox_hits": 8,
+        "point_hit_rate": 0.8,
+        "gt_coverage_rate": 0.8,
+        "mean_iou": 0.3867,
+        "matches": [
+          {
+            "pred_index": 0,
+            "pred_center": [
+              39,
+              158
+            ],
+            "pred_bbox": [
+              17,
+              128,
+              62,
+              188
+            ],
+            "matched_gt_index": 0,
+            "matched_gt_label": "League of Legends Community",
+            "iou": 0.5652
+          },
+          {
+            "pred_index": 1,
+            "pred_center": [
+              39,
+              230
+            ],
+            "pred_bbox": [
+              17,
+              200,
+              62,
+              260
+            ],
+            "matched_gt_index": 1,
+            "matched_gt_label": "Starky | League of Legends + IRL",
+            "iou": 0.4619
+          },
+          {
+            "pred_index": 2,
+            "pred_center": [
+              39,
+              302
+            ],
+            "pred_bbox": [
+              17,
+              272,
+              62,
+              332
+            ],
+            "matched_gt_index": 2,
+            "matched_gt_label": "League of Legends",
+            "iou": 0.3714
+          },
+          {
+            "pred_index": 3,
+            "pred_center": [
+              39,
+              374
+            ],
+            "pred_bbox": [
+              17,
+              344,
+              62,
+              404
+            ],
+            "matched_gt_index": 3,
+            "matched_gt_label": "League of Legends: Wild Rift",
+            "iou": 0.2915
+          },
+          {
+            "pred_index": 4,
+            "pred_center": [
+              39,
+              446
+            ],
+            "pred_bbox": [
+              17,
+              416,
+              62,
+              476
+            ],
+            "matched_gt_index": null,
+            "matched_gt_label": null,
+            "iou": 0.2203
+          },
+          {
+            "pred_index": 5,
+            "pred_center": [
+              39,
+              518
+            ],
+            "pred_bbox": [
+              17,
+              488,
+              62,
+              548
+            ],
+            "matched_gt_index": 6,
+            "matched_gt_label": "League Of Legends Iran",
+            "iou": 0.2668
+          },
+          {
+            "pred_index": 6,
+            "pred_center": [
+              39,
+              590
+            ],
+            "pred_bbox": [
+              17,
+              560,
+              62,
+              620
+            ],
+            "matched_gt_index": 7,
+            "matched_gt_label": "League of legend",
+            "iou": 0.3437
+          },
+          {
+            "pred_index": 7,
+            "pred_center": [
+              39,
+              662
+            ],
+            "pred_bbox": [
+              17,
+              632,
+              62,
+              692
+            ],
+            "matched_gt_index": 8,
+            "matched_gt_label": "League of legends",
+            "iou": 0.4304
+          },
+          {
+            "pred_index": 8,
+            "pred_center": [
+              39,
+              734
+            ],
+            "pred_bbox": [
+              17,
+              704,
+              62,
+              764
+            ],
+            "matched_gt_index": 9,
+            "matched_gt_label": "«League of legends»",
+            "iou": 0.5292
+          },
+          {
+            "pred_index": 9,
+            "pred_center": [
+              39,
+              806
+            ],
+            "pred_bbox": [
+              17,
+              776,
+              62,
+              836
+            ],
+            "matched_gt_index": null,
+            "matched_gt_label": null,
+            "iou": null
+          }
+        ],
+        "details": "点命中 8/10 (80.0%), GT覆盖 8/10 (80.0%), 平均IoU 0.387"
+      }
+    },
+    "marked_image": "E:\\MyCode3\\ARKAPITEST\\output\\POS_002_1-5-vision-pro_marked.png"
+  },
+  {
+    "model": "doubao-1-5-vision-pro-32k-250115",
+    "test_id": "POS_003",
+    "test_name": "仅群组类型定位(细粒度类型过滤)",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 2.997,
+    "usage": {
+      "prompt_tokens": 1240,
+      "completion_tokens": 42,
+      "total_tokens": 1282
+    },
+    "content": "1. [League of Legends Community Chat] <point>29 374</point>\n2. [League of Legends Iran] <point>29 455</point>",
+    "thinking_content": "",
+    "evaluation": {
+      "accuracy": null,
+      "details": "点命中 0/2 (0.0%), GT覆盖 0/3 (0.0%)",
+      "coordinate_eval": {
+        "predictions_count": 2,
+        "gt_count": 3,
+        "point_in_bbox_hits": 0,
+        "point_hit_rate": 0.0,
+        "gt_coverage_rate": 0.0,
+        "mean_iou": null,
+        "matches": [
+          {
+            "pred_index": 0,
+            "pred_center": [
+              29,
+              374
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": null,
+            "matched_gt_label": null,
+            "iou": null
+          },
+          {
+            "pred_index": 1,
+            "pred_center": [
+              29,
+              455
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": null,
+            "matched_gt_label": null,
+            "iou": null
+          }
+        ],
+        "details": "点命中 0/2 (0.0%), GT覆盖 0/3 (0.0%)"
+      }
+    },
+    "marked_image": "E:\\MyCode3\\ARKAPITEST\\output\\POS_003_1-5-vision-pro_marked.png"
+  },
+  {
+    "model": "qwen3-vl-flash-2026-01-22",
+    "test_id": "POS_001a",
+    "test_name": "单个图标定位(右侧详情面板)",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 0.938,
+    "usage": {
+      "prompt_tokens": 888,
+      "completion_tokens": 14,
+      "total_tokens": 902
+    },
+    "content": "<point>925\" 90</point>",
+    "thinking_content": "",
+    "evaluation": {
+      "accuracy": null,
+      "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)",
+      "coordinate_eval": {
+        "predictions_count": 1,
+        "gt_count": 1,
+        "point_in_bbox_hits": 1,
+        "point_hit_rate": 1.0,
+        "gt_coverage_rate": 1.0,
+        "mean_iou": null,
+        "matches": [
+          {
+            "pred_index": 0,
+            "pred_center": [
+              925,
+              90
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 0,
+            "matched_gt_label": "League of Legends Community (right panel)",
+            "iou": null
+          }
+        ],
+        "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)"
+      }
+    },
+    "marked_image": "E:\\MyCode3\\ARKAPITEST\\output\\POS_001a_qwen3-vl-flash_marked.png"
+  },
+  {
+    "model": "qwen3-vl-flash-2026-01-22",
+    "test_id": "POS_001b",
+    "test_name": "单个图标定位(左侧搜索列表)",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 0.589,
+    "usage": {
+      "prompt_tokens": 888,
+      "completion_tokens": 13,
+      "total_tokens": 901
+    },
+    "content": "<point>18 152</point>",
+    "thinking_content": "",
+    "evaluation": {
+      "accuracy": null,
+      "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)",
+      "coordinate_eval": {
+        "predictions_count": 1,
+        "gt_count": 1,
+        "point_in_bbox_hits": 1,
+        "point_hit_rate": 1.0,
+        "gt_coverage_rate": 1.0,
+        "mean_iou": null,
+        "matches": [
+          {
+            "pred_index": 0,
+            "pred_center": [
+              18,
+              152
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 0,
+            "matched_gt_label": "League of Legends Community (left list row 1)",
+            "iou": null
+          }
+        ],
+        "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)"
+      }
+    },
+    "marked_image": "E:\\MyCode3\\ARKAPITEST\\output\\POS_001b_qwen3-vl-flash_marked.png"
+  },
+  {
+    "model": "qwen3-vl-flash-2026-01-22",
+    "test_id": "POS_002",
+    "test_name": "多个群组图标定位",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 2.159,
+    "usage": {
+      "prompt_tokens": 912,
+      "completion_tokens": 187,
+      "total_tokens": 1099
+    },
+    "content": "1. League of Legends Community <point>15 156</point>\n2. Starkey | League of Legends + IRL <point>15 214</point>\n3. League of Legends <point>15 274</point>\n4. League of Legends: Wild Rift <point>15 339</point>\n5. League of Legends Community Chat <point>15 400</point>\n6. League of Legends News <point>15 468</point>\n7. League Of Legends Iran <point>15 535</point>\n8. League of legends <point>15 597</point>\n9. League of legend <point>15 662</point>\n10. aLeague of legends <point>15 729</point>",
+    "thinking_content": "",
+    "evaluation": {
+      "accuracy": 0.8182,
+      "found_count": 9,
+      "total_count": 11,
+      "found_groups": [
+        "League of Legends Community",
+        "League of Legends",
+        "League of Legends: Wild Rift",
+        "League of Legends Community Chat",
+        "League of Legends News",
+        "League Of Legends Iran",
+        "League of legend",
+        "League of legends",
+        "«League of legends»"
+      ],
+      "missed_groups": [
+        "Starky | League of Legends + IRL",
+        "League off Legend"
+      ],
+      "details": "识别 9/11 个群组 (准确率: 81.8%) | 点命中 10/10 (100.0%), GT覆盖 10/10 (100.0%)",
+      "coordinate_eval": {
+        "predictions_count": 10,
+        "gt_count": 10,
+        "point_in_bbox_hits": 10,
+        "point_hit_rate": 1.0,
+        "gt_coverage_rate": 1.0,
+        "mean_iou": null,
+        "matches": [
+          {
+            "pred_index": 0,
+            "pred_center": [
+              15,
+              156
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 0,
+            "matched_gt_label": "League of Legends Community",
+            "iou": null
+          },
+          {
+            "pred_index": 1,
+            "pred_center": [
+              15,
+              214
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 1,
+            "matched_gt_label": "Starky | League of Legends + IRL",
+            "iou": null
+          },
+          {
+            "pred_index": 2,
+            "pred_center": [
+              15,
+              274
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 2,
+            "matched_gt_label": "League of Legends",
+            "iou": null
+          },
+          {
+            "pred_index": 3,
+            "pred_center": [
+              15,
+              339
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 3,
+            "matched_gt_label": "League of Legends: Wild Rift",
+            "iou": null
+          },
+          {
+            "pred_index": 4,
+            "pred_center": [
+              15,
+              400
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 4,
+            "matched_gt_label": "League of Legends Community Chat",
+            "iou": null
+          },
+          {
+            "pred_index": 5,
+            "pred_center": [
+              15,
+              468
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 5,
+            "matched_gt_label": "League of Legends News",
+            "iou": null
+          },
+          {
+            "pred_index": 6,
+            "pred_center": [
+              15,
+              535
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 6,
+            "matched_gt_label": "League Of Legends Iran",
+            "iou": null
+          },
+          {
+            "pred_index": 7,
+            "pred_center": [
+              15,
+              597
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 7,
+            "matched_gt_label": "League of legend",
+            "iou": null
+          },
+          {
+            "pred_index": 8,
+            "pred_center": [
+              15,
+              662
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 8,
+            "matched_gt_label": "League of legends",
+            "iou": null
+          },
+          {
+            "pred_index": 9,
+            "pred_center": [
+              15,
+              729
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 9,
+            "matched_gt_label": "«League of legends»",
+            "iou": null
+          }
+        ],
+        "details": "点命中 10/10 (100.0%), GT覆盖 10/10 (100.0%)"
+      }
+    },
+    "marked_image": "E:\\MyCode3\\ARKAPITEST\\output\\POS_002_qwen3-vl-flash_marked.png"
+  },
+  {
+    "model": "qwen3-vl-flash-2026-01-22",
+    "test_id": "POS_003",
+    "test_name": "仅群组类型定位(细粒度类型过滤)",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 1.483,
+    "usage": {
+      "prompt_tokens": 993,
+      "completion_tokens": 113,
+      "total_tokens": 1106
+    },
+    "content": "1. League of Legends Community Chat <point>15 362</point>\n2. League of Legends News <point=\"15\" 470</point>\n3. League Of Legends Iran <point=\"15\" 528</point>\n4. League of legends <point=\"15\" 606</point>\n5. League of legend <point=\"15\" 662</point>\n6. aLeague of legends<point=\"15\" 721</point>",
+    "thinking_content": "",
+    "evaluation": {
+      "accuracy": null,
+      "details": "点命中 0/1 (0.0%), GT覆盖 0/3 (0.0%)",
+      "coordinate_eval": {
+        "predictions_count": 1,
+        "gt_count": 3,
+        "point_in_bbox_hits": 0,
+        "point_hit_rate": 0.0,
+        "gt_coverage_rate": 0.0,
+        "mean_iou": null,
+        "matches": [
+          {
+            "pred_index": 0,
+            "pred_center": [
+              15,
+              362
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": null,
+            "matched_gt_label": null,
+            "iou": null
+          }
+        ],
+        "details": "点命中 0/1 (0.0%), GT覆盖 0/3 (0.0%)"
+      }
+    },
+    "marked_image": "E:\\MyCode3\\ARKAPITEST\\output\\POS_003_qwen3-vl-flash_marked.png"
+  },
+  {
+    "model": "gui-plus-2026-02-26",
+    "test_id": "POS_001a",
+    "test_name": "单个图标定位(右侧详情面板)",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 1.227,
+    "usage": {
+      "prompt_tokens": 1884,
+      "completion_tokens": 67,
+      "total_tokens": 1951
+    },
+    "content": "Action: 点击右侧频道详情面板顶部的“League of Legends Community”频道圆形大头像（紫色背景，位于订阅数上方）。\n<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [920, 100]}}\n</tool_call>",
+    "thinking_content": "",
+    "evaluation": {
+      "accuracy": null,
+      "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)",
+      "coordinate_eval": {
+        "predictions_count": 1,
+        "gt_count": 1,
+        "point_in_bbox_hits": 1,
+        "point_hit_rate": 1.0,
+        "gt_coverage_rate": 1.0,
+        "mean_iou": null,
+        "matches": [
+          {
+            "pred_index": 0,
+            "pred_center": [
+              920,
+              100
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 0,
+            "matched_gt_label": "League of Legends Community (right panel)",
+            "iou": null
+          }
+        ],
+        "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)"
+      }
+    },
+    "marked_image": "E:\\MyCode3\\ARKAPITEST\\output\\POS_001a_gui-plus_marked.png"
+  },
+  {
+    "model": "gui-plus-2026-02-26",
+    "test_id": "POS_001b",
+    "test_name": "单个图标定位(左侧搜索列表)",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 1.179,
+    "usage": {
+      "prompt_tokens": 1884,
+      "completion_tokens": 64,
+      "total_tokens": 1948
+    },
+    "content": "Action: 点击左侧搜索结果列表中第一个名为“League of Legends Community”的条目（@LoL_community）的头像。\n<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [18, 151]}}\n</tool_call>",
+    "thinking_content": "",
+    "evaluation": {
+      "accuracy": null,
+      "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)",
+      "coordinate_eval": {
+        "predictions_count": 1,
+        "gt_count": 1,
+        "point_in_bbox_hits": 1,
+        "point_hit_rate": 1.0,
+        "gt_coverage_rate": 1.0,
+        "mean_iou": null,
+        "matches": [
+          {
+            "pred_index": 0,
+            "pred_center": [
+              18,
+              151
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 0,
+            "matched_gt_label": "League of Legends Community (left list row 1)",
+            "iou": null
+          }
+        ],
+        "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)"
+      }
+    },
+    "marked_image": "E:\\MyCode3\\ARKAPITEST\\output\\POS_001b_gui-plus_marked.png"
+  },
+  {
+    "model": "gui-plus-2026-02-26",
+    "test_id": "POS_002",
+    "test_name": "多个群组图标定位",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 1.256,
+    "usage": {
+      "prompt_tokens": 1908,
+      "completion_tokens": 67,
+      "total_tokens": 1975
+    },
+    "content": "Action: 在左侧搜索结果列表中，对每个群组/频道条目执行鼠标左键点击操作，以选中并查看其详细信息。\n<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [17, 150]}}\n</tool_call>",
+    "thinking_content": "",
+    "evaluation": {
+      "accuracy": 0.0,
+      "found_count": 0,
+      "total_count": 11,
+      "found_groups": [],
+      "missed_groups": [
+        "League of Legends Community",
+        "Starky | League of Legends + IRL",
+        "League of Legends",
+        "League of Legends: Wild Rift",
+        "League of Legends Community Chat",
+        "League of Legends News",
+        "League Of Legends Iran",
+        "League of legend",
+        "League of legends",
+        "League off Legend",
+        "«League of legends»"
+      ],
+      "details": "识别 0/11 个群组 (准确率: 0.0%) | 点命中 1/1 (100.0%), GT覆盖 1/10 (10.0%)",
+      "coordinate_eval": {
+        "predictions_count": 1,
+        "gt_count": 10,
+        "point_in_bbox_hits": 1,
+        "point_hit_rate": 1.0,
+        "gt_coverage_rate": 0.1,
+        "mean_iou": null,
+        "matches": [
+          {
+            "pred_index": 0,
+            "pred_center": [
+              17,
+              150
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 0,
+            "matched_gt_label": "League of Legends Community",
+            "iou": null
+          }
+        ],
+        "details": "点命中 1/1 (100.0%), GT覆盖 1/10 (10.0%)"
+      }
+    },
+    "marked_image": "E:\\MyCode3\\ARKAPITEST\\output\\POS_002_gui-plus_marked.png"
+  },
+  {
+    "model": "gui-plus-2026-02-26",
+    "test_id": "POS_003",
+    "test_name": "仅群组类型定位(细粒度类型过滤)",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 1.227,
+    "usage": {
+      "prompt_tokens": 1989,
+      "completion_tokens": 70,
+      "total_tokens": 2059
+    },
+    "content": "Action: 在左侧搜索结果列表中，找到类型为「群组」的条目（以两个人的小头像图标表示），并点击其头像中心位置。\n<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [17, 214]}}\n</tool_call>",
+    "thinking_content": "",
+    "evaluation": {
+      "accuracy": null,
+      "details": "点命中 0/1 (0.0%), GT覆盖 0/3 (0.0%)",
+      "coordinate_eval": {
+        "predictions_count": 1,
+        "gt_count": 3,
+        "point_in_bbox_hits": 0,
+        "point_hit_rate": 0.0,
+        "gt_coverage_rate": 0.0,
+        "mean_iou": null,
+        "matches": [
+          {
+            "pred_index": 0,
+            "pred_center": [
+              17,
+              214
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": null,
+            "matched_gt_label": null,
+            "iou": null
+          }
+        ],
+        "details": "点命中 0/1 (0.0%), GT覆盖 0/3 (0.0%)"
+      }
+    },
+    "marked_image": "E:\\MyCode3\\ARKAPITEST\\output\\POS_003_gui-plus_marked.png"
+  }
+]

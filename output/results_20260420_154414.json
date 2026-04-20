@@ -1,0 +1,310 @@
+[
+  {
+    "model": "doubao-seed-1-6-vision-250815",
+    "test_id": "POS_001a",
+    "test_name": "单个图标定位(右侧详情面板)",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 5.403,
+    "usage": {
+      "prompt_tokens": 1181,
+      "completion_tokens": 195,
+      "total_tokens": 1376
+    },
+    "content": "<point>925 93</point>",
+    "thinking_content": "用户现在需要找到右侧频道详情面板顶部的圆形大头像的中心坐标。首先看图片，右侧面板顶部紫色背景，头像在那里，订阅数上方。观察位置，头像的位置大概是x=925，y=92左右？不对，再仔细看，右侧面板的头像，紫色背景，里面是英雄联盟的角色。从截图看，右侧面板的头像区域，坐标应该是<point>925 94</point>？或者更准确的，看像素，假设截图的右侧面板，头像的中心，x轴大概925，y轴大概93左右。所以确定坐标为<point>925 93</point>？再检查，右侧面板顶部，紫色背景，头像的位置，所以中心坐标是<point>925 93</point>。",
+    "evaluation": {
+      "accuracy": null,
+      "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)",
+      "coordinate_eval": {
+        "predictions_count": 1,
+        "gt_count": 1,
+        "point_in_bbox_hits": 1,
+        "point_hit_rate": 1.0,
+        "gt_coverage_rate": 1.0,
+        "mean_iou": null,
+        "matches": [
+          {
+            "pred_index": 0,
+            "pred_center": [
+              925,
+              93
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 0,
+            "matched_gt_label": "League of Legends Community (right panel)",
+            "iou": null
+          }
+        ],
+        "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)"
+      }
+    },
+    "marked_image": "E:\\MyCode3\\ARKAPITEST\\output\\POS_001a_seed-1-6-vision_marked.png"
+  },
+  {
+    "model": "doubao-seed-1-6-vision-250815",
+    "test_id": "POS_001b",
+    "test_name": "单个图标定位(左侧搜索列表)",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 10.884,
+    "usage": {
+      "prompt_tokens": 1181,
+      "completion_tokens": 494,
+      "total_tokens": 1675
+    },
+    "content": "<point>14 151</point>",
+    "thinking_content": "用户现在需要在左侧搜索结果列表里找到第一个名为“League of Legends Community”的条目（不是Chat那个），然后确定它的头像中心坐标。首先看左侧列表，第一个符合的条目是@lol_community，头像在最左边。看截图，左侧第一个结果的头像，从界面布局看，头像的位置大概是x=14，y=150？不对，看左侧的搜索结果，第一个是“League of Legends Community”，头像应该是左边的那个小图标，坐标大概是<point>14 152</point>？不对，再仔细看，左侧列表的第一个条目，头像的位置，从截图里看，左边的头像，比如第一个条目“League of Legends Community”的头像，在最左边，x轴大概14，y轴大概150左右？或者更准确的，看界面，左侧的搜索结果，第一个条目是@lol_community，头像的位置，应该是<point>14 151</point>？不对，再看，左侧的搜索结果列表，第一个条目是“League of Legends Community”，头像的位置，从截图中，左边的头像，比如第一个的头像，是一个紫色的图标？不对，看截图，左侧第一个条目是“League of Legends Community”，头像的位置，坐标应该是<point>14 152</point>？或者更准确的，测量一下，左边的头像，每个条目的头像都是圆形的，第一个条目的头像，x=14，y=150左右？或者看截图，左侧的搜索结果，第一个条目是“League of Legends Community”，头像的位置，坐标是<point>14 151</point>？不对，再看，左侧的搜索结果，第一个条目是“League of Legends Community”，头像的位置，应该是<point>14 152</point>，所以最终坐标是<point>14 151</point>？或者可能我错了，再仔细看截图，左侧的搜索结果列表，第一个条目是“League of Legends Community”，头像在最左边，所以坐标是<point>14 152</point>。",
+    "evaluation": {
+      "accuracy": null,
+      "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)",
+      "coordinate_eval": {
+        "predictions_count": 1,
+        "gt_count": 1,
+        "point_in_bbox_hits": 1,
+        "point_hit_rate": 1.0,
+        "gt_coverage_rate": 1.0,
+        "mean_iou": null,
+        "matches": [
+          {
+            "pred_index": 0,
+            "pred_center": [
+              14,
+              151
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 0,
+            "matched_gt_label": "League of Legends Community (left list row 1)",
+            "iou": null
+          }
+        ],
+        "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)"
+      }
+    },
+    "marked_image": "E:\\MyCode3\\ARKAPITEST\\output\\POS_001b_seed-1-6-vision_marked.png"
+  },
+  {
+    "model": "doubao-seed-1-6-vision-250815",
+    "test_id": "POS_003",
+    "test_name": "仅群组类型定位(细粒度类型过滤)",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 30.689,
+    "usage": {
+      "prompt_tokens": 1281,
+      "completion_tokens": 1833,
+      "total_tokens": 3114
+    },
+    "content": "1. League of Legends Community Chat <point>17 404</point>\n2. 狂球-电研-频道资源 <point>17 823</point>\n3. 狂球-电研-频道资源 <point>17 900</point>\n4. 狂球-电研-频道资源 <point>17 965</point>",
+    "thinking_content": "用户现在需要在左侧搜索结果列表里找类型是群组的，也就是头像图标是两个人的小头像的条目。首先看每个条目的头像：\n\n第一个条目是League of Legends Community？不对，第一个条目头像好像是频道？不对，看图标。仔细看左侧列表：\n\n1. 第一个条目：League of Legends Community？不，第一个条目头像左边的图标，看截图，第一个条目左边是📢？不对，用户给的判断依据是两个人的小头像（👥）是群组。看左侧列表的图标：\n\n看每个条目的图标：\n\n- League of Legends Community Chat <point>17 406</point>？不对，看图标，第一个群组的应该是：\n\n看左侧列表的条目，从上到下：\n\n第一个群组：League of Legends Community Chat？不，看图标，第一个带有👥图标的：\n\n仔细看：\n\n1. League of Legends Community Chat <point>17 404</point>？不对，看图标，第一个群组的是：\n\n看左侧列表的条目：\n\n- 第一个群组：League of Legends Community Chat？不，看图标，第一个带有👥的是：\n\n看截图左侧，条目列表：\n\n第一个群组：League of Legends Community Chat？不对，看图标，第一个群组的是：\n\n重新看：\n\n左侧列表的条目，图标为👥（两个人头）的：\n\n1. League of Legends Community Chat <point>17 406</point>？不，看图标，第一个群组的是：\n\n看每个条目的图标：\n\n- League of Legends Community Chat：图标是👥，所以是群组。\n\n然后：\n\n- 狂球-电研-频道资源 <point>17 825</point>：图标是👥？\n\n- 狂球-电研-频道资源 <point>17 900</point>：图标是👥？\n\n- 狂球-电研-频道资源 <point>17 965</point>：图标是👥？\n\n还有中间的：\n\nLeague of Legends Community Chat <point>17 404</point>\n\n然后：\n\n狂球-电研-频道资源 <point>17 823</point>\n\n狂球-电研-频道资源 <point>17 898</point>\n\n狂球-电研-频道资源 <point>17 964</point>\n\n还有没有其他？\n\n再仔细看：\n\n左侧列表的条目：\n\n1. League of Legends Community Chat <point>17 404</point> （图标是👥，群组）\n\n2. 狂球-电研-频道资源 <point>17 823</point> （图标是👥，群组）\n\n3. 狂球-电研-频道资源 <point>17 898</point> （图标是👥，群组）\n\n4. 狂球-电研-频道资源 <point>17 964</point> （图标是👥，群组）\n\n还有没有其他？\n\n再看：\n\n还有一个：League of Legends Community Chat？不，还有没有其他群组？\n\n看左侧列表：\n\n从上到下：\n\n1. League of Legends Community Chat <point>17 404</point> （图标👥）\n\n然后中间的：\n\n狂球-电研-频道资源 <point>17 823</point>\n\n狂球-电研-频道资源 <point>17 898</point>\n\n狂球-电研-频道资源 <point>17 964</point>\n\n还有吗？\n\n再看：\n\n还有一个：League of Legends Community Chat？不，还有没有其他？\n\n哦，可能我漏了，再看：\n\n左侧列表的条目：\n\n- League of Legends Community Chat <point>17 404</point> （图标👥）\n\n- 狂球-电研-频道资源 <point>17 823</point> （图标👥）\n\n- 狂球-电研-频道资源 <point>17 898</point> （图标👥）\n\n- 狂球-电研-频道资源 <point>17 964</point> （图标👥）\n\n还有吗？\n\n再看，还有一个：League of Legends Community Chat？不，还有一个：\n\n看左侧列表，还有一个：\n\n狂球-电研-频道资源 <point>17 823</point> （第一个狂球）\n\n狂球-电研-频道资源 <point>17 900</point> （第二个狂球）\n\n狂球-电研-频道资源 <point>17 965</point> （第三个狂球）\n\n还有中间的：\n\nLeague of Legends Community Chat <point>17 404</point>\n\n还有吗？\n\n再看，还有一个：\n\n狂球-电研-频道资源 <point>17 823</point>\n\n现在重新整理：\n\n1. League of Legends Community Chat <point>17 404</point>\n\n2. 狂球-电研-频道资源 <point>17 823</point>\n\n3. 狂球-电研-频道资源 <point>17 898</point>\n\n4. 狂球-电研-频道资源 <point>17 964</point>\n\n还有吗？\n\n再看，还有一个：\n\n狂球-电研-频道资源 <point>17 823</point> 是第一个狂球，然后第二个狂球是<point>17 900</point>，第三个是<point>17 965</point>。\n\n另外，还有没有其他群组？\n\n比如，League of Legends Community Chat 是一个，然后三个狂球的群组。\n\n现在确认每个条目的图标：\n\n- League of Legends Community Chat：图标是👥（两个人头），所以是群组。\n\n- 狂球-电研-频道资源（第一个）：图标是👥，群组。\n\n- 狂球-电研-频道资源（第二个）：图标是👥，群组。\n\n- 狂球-电研-频道资源（第三个）：图标是👥，群组。\n\n还有吗？\n\n再看左侧列表，还有没有其他带有👥图标的：\n\n比如，League of Legends Community Chat 是一个，然后三个狂球的群组，还有吗？\n\n看截图左侧，条目列表：\n\n从上到下：\n\n1. League of Legends Community Chat <point>17 404</point> （图标👥）\n\n2. 狂球-电研-频道资源 <point>17 823</point> （图标👥）\n\n3. 狂球-电研-频道资源 <point>17 900</point> （图标👥）\n\n4. 狂球-电研-频道资源 <point>17 965</point> （图标👥）\n\n现在检查坐标是否正确，指向头像中心。\n\n所以最终的群组条目：\n\n1. League of Legends Community Chat <point>17 404</point>\n\n2. 狂球-电研-频道资源 <point>17 823</point>\n\n3. 狂球-电研-频道资源 <point>17 900</point>\n\n4. 狂球-电研-频道资源 <point>17 965</point>\n\n不过再仔细看，第一个狂球的条目是“狂球-电研-频道资源”，图标是👥，所以正确。\n\n现在按顺序输出，从上到下。",
+    "evaluation": {
+      "accuracy": null,
+      "details": "点命中 1/4 (25.0%), GT覆盖 1/3 (33.3%)",
+      "coordinate_eval": {
+        "predictions_count": 4,
+        "gt_count": 3,
+        "point_in_bbox_hits": 1,
+        "point_hit_rate": 0.25,
+        "gt_coverage_rate": 0.3333,
+        "mean_iou": null,
+        "matches": [
+          {
+            "pred_index": 0,
+            "pred_center": [
+              17,
+              404
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 0,
+            "matched_gt_label": "League of Legends Community Chat",
+            "iou": null
+          },
+          {
+            "pred_index": 1,
+            "pred_center": [
+              17,
+              823
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": null,
+            "matched_gt_label": null,
+            "iou": null
+          },
+          {
+            "pred_index": 2,
+            "pred_center": [
+              17,
+              900
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": null,
+            "matched_gt_label": null,
+            "iou": null
+          },
+          {
+            "pred_index": 3,
+            "pred_center": [
+              17,
+              965
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": null,
+            "matched_gt_label": null,
+            "iou": null
+          }
+        ],
+        "details": "点命中 1/4 (25.0%), GT覆盖 1/3 (33.3%)"
+      }
+    },
+    "marked_image": "E:\\MyCode3\\ARKAPITEST\\output\\POS_003_seed-1-6-vision_marked.png"
+  },
+  {
+    "model": "doubao-1-5-vision-pro-32k-250115",
+    "test_id": "POS_001a",
+    "test_name": "单个图标定位(右侧详情面板)",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 1.958,
+    "usage": {
+      "prompt_tokens": 1140,
+      "completion_tokens": 12,
+      "total_tokens": 1152
+    },
+    "content": "<point>865 70</point>",
+    "thinking_content": "",
+    "evaluation": {
+      "accuracy": null,
+      "details": "点命中 0/1 (0.0%), GT覆盖 0/1 (0.0%)",
+      "coordinate_eval": {
+        "predictions_count": 1,
+        "gt_count": 1,
+        "point_in_bbox_hits": 0,
+        "point_hit_rate": 0.0,
+        "gt_coverage_rate": 0.0,
+        "mean_iou": null,
+        "matches": [
+          {
+            "pred_index": 0,
+            "pred_center": [
+              865,
+              70
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": null,
+            "matched_gt_label": null,
+            "iou": null
+          }
+        ],
+        "details": "点命中 0/1 (0.0%), GT覆盖 0/1 (0.0%)"
+      }
+    },
+    "marked_image": "E:\\MyCode3\\ARKAPITEST\\output\\POS_001a_1-5-vision-pro_marked.png"
+  },
+  {
+    "model": "doubao-1-5-vision-pro-32k-250115",
+    "test_id": "POS_001b",
+    "test_name": "单个图标定位(左侧搜索列表)",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 1.429,
+    "usage": {
+      "prompt_tokens": 1140,
+      "completion_tokens": 12,
+      "total_tokens": 1152
+    },
+    "content": "<point>17 115</point>",
+    "thinking_content": "",
+    "evaluation": {
+      "accuracy": null,
+      "details": "点命中 0/1 (0.0%), GT覆盖 0/1 (0.0%)",
+      "coordinate_eval": {
+        "predictions_count": 1,
+        "gt_count": 1,
+        "point_in_bbox_hits": 0,
+        "point_hit_rate": 0.0,
+        "gt_coverage_rate": 0.0,
+        "mean_iou": null,
+        "matches": [
+          {
+            "pred_index": 0,
+            "pred_center": [
+              17,
+              115
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": null,
+            "matched_gt_label": null,
+            "iou": null
+          }
+        ],
+        "details": "点命中 0/1 (0.0%), GT覆盖 0/1 (0.0%)"
+      }
+    },
+    "marked_image": "E:\\MyCode3\\ARKAPITEST\\output\\POS_001b_1-5-vision-pro_marked.png"
+  },
+  {
+    "model": "doubao-1-5-vision-pro-32k-250115",
+    "test_id": "POS_003",
+    "test_name": "仅群组类型定位(细粒度类型过滤)",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 2.238,
+    "usage": {
+      "prompt_tokens": 1240,
+      "completion_tokens": 41,
+      "total_tokens": 1281
+    },
+    "content": "1. [League of Legends Community Chat] <point>29 369</point>\n2. [League of Legends Community] <point>29 79</point>",
+    "thinking_content": "",
+    "evaluation": {
+      "accuracy": null,
+      "details": "点命中 0/2 (0.0%), GT覆盖 0/3 (0.0%)",
+      "coordinate_eval": {
+        "predictions_count": 2,
+        "gt_count": 3,
+        "point_in_bbox_hits": 0,
+        "point_hit_rate": 0.0,
+        "gt_coverage_rate": 0.0,
+        "mean_iou": null,
+        "matches": [
+          {
+            "pred_index": 0,
+            "pred_center": [
+              29,
+              369
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": null,
+            "matched_gt_label": null,
+            "iou": null
+          },
+          {
+            "pred_index": 1,
+            "pred_center": [
+              29,
+              79
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": null,
+            "matched_gt_label": null,
+            "iou": null
+          }
+        ],
+        "details": "点命中 0/2 (0.0%), GT覆盖 0/3 (0.0%)"
+      }
+    },
+    "marked_image": "E:\\MyCode3\\ARKAPITEST\\output\\POS_003_1-5-vision-pro_marked.png"
+  }
+]

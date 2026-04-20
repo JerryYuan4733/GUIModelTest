@@ -1,0 +1,46 @@
+[
+  {
+    "model": "qwen3-vl-32b-thinking",
+    "test_id": "POS_004",
+    "test_name": "搜索输入框定位(点击输入框)",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 9.023,
+    "usage": {
+      "prompt_tokens": 1905,
+      "completion_tokens": 373,
+      "total_tokens": 2278
+    },
+    "content": "<point>(160, 57)</point>",
+    "thinking_content": "用户现在需要找到顶部的搜索输入框。看界面最上方，有个横向的长条形输入框，里面有“Search”占位符。位置在顶部，所以坐标要确定。看截图里，搜索框在左上角，标题Telegram下面，那个输入框。所以中心坐标的x和y，需要计算。归一化到0-1000，所以看输入框的位置。输入框的中心位置，x大概是160左右？不对，再仔细看。界面中搜索框的范围，从左到右，输入框的中心点。假设整个界面宽度是1000，搜索框的位置，从左到右，输入框的中心坐标。看截图，搜索框在顶部，所以y坐标比较小，x坐标是中间位置。需要确定准确位置。看图片里，搜索框是“Search”占位符的输入框，位置在顶部，所以坐标是(161, 57)？不对，再看。用户给的截图中，搜索框的位置，横向长条，中心点。应该是在(160, 56)左右？再确认。看界面，搜索框在Telegram标题下面，所以y坐标是56左右，x坐标是160左右？对，所以中心坐标是(160, 57)？或者更准确？再看，输入框的宽度，从左到右，所以中心x是(0 + 340)/2？不对，因为输入框的宽度是从左到右，所以x坐标是160左右。所以最终坐标是(160, 57)。",
+    "evaluation": {
+      "accuracy": null,
+      "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)",
+      "coordinate_eval": {
+        "predictions_count": 1,
+        "gt_count": 1,
+        "point_in_bbox_hits": 1,
+        "point_hit_rate": 1.0,
+        "gt_coverage_rate": 1.0,
+        "mean_iou": null,
+        "matches": [
+          {
+            "pred_index": 0,
+            "pred_center": [
+              160,
+              57
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 0,
+            "matched_gt_label": "Telegram Search Input Box",
+            "iou": null
+          }
+        ],
+        "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)"
+      }
+    },
+    "marked_image": "E:\\MyCode3\\ARKAPITEST\\output\\POS_004_qwen3-vl-32b-thinking_marked.png"
+  }
+]

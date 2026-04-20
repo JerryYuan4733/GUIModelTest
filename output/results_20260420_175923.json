@@ -1,0 +1,166 @@
+[
+  {
+    "model": "qwen3-vl-flash-2026-01-22",
+    "test_id": "POS_001a",
+    "test_name": "单个图标定位(右侧详情面板)",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 1.381,
+    "usage": {
+      "prompt_tokens": 888,
+      "completion_tokens": 14,
+      "total_tokens": 902
+    },
+    "content": "<point>925\" 90</point>",
+    "thinking_content": "",
+    "evaluation": {
+      "accuracy": null,
+      "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)",
+      "coordinate_eval": {
+        "predictions_count": 1,
+        "gt_count": 1,
+        "point_in_bbox_hits": 1,
+        "point_hit_rate": 1.0,
+        "gt_coverage_rate": 1.0,
+        "mean_iou": null,
+        "matches": [
+          {
+            "pred_index": 0,
+            "pred_center": [
+              925,
+              90
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 0,
+            "matched_gt_label": "League of Legends Community (right panel)",
+            "iou": null
+          }
+        ],
+        "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)"
+      }
+    },
+    "marked_image": "E:\\MyCode3\\ARKAPITEST\\output\\POS_001a_qwen3-vl-flash_marked.png"
+  },
+  {
+    "model": "qwen3-vl-flash-2026-01-22",
+    "test_id": "POS_004",
+    "test_name": "搜索输入框定位(点击输入框)",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 1.792,
+    "usage": {
+      "prompt_tokens": 1898,
+      "completion_tokens": 13,
+      "total_tokens": 1911
+    },
+    "content": "<point>182 56</point>",
+    "thinking_content": "",
+    "evaluation": {
+      "accuracy": null,
+      "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)",
+      "coordinate_eval": {
+        "predictions_count": 1,
+        "gt_count": 1,
+        "point_in_bbox_hits": 1,
+        "point_hit_rate": 1.0,
+        "gt_coverage_rate": 1.0,
+        "mean_iou": null,
+        "matches": [
+          {
+            "pred_index": 0,
+            "pred_center": [
+              182,
+              56
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 0,
+            "matched_gt_label": "Telegram Search Input Box",
+            "iou": null
+          }
+        ],
+        "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)"
+      }
+    },
+    "marked_image": "E:\\MyCode3\\ARKAPITEST\\output\\POS_004_qwen3-vl-flash_marked.png"
+  },
+  {
+    "model": "qwen3-vl-32b-instruct",
+    "test_id": "POS_001a",
+    "test_name": "单个图标定位(右侧详情面板)",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 1.562,
+    "usage": {
+      "prompt_tokens": 888,
+      "completion_tokens": 14,
+      "total_tokens": 902
+    },
+    "content": "<point>920 105</point>",
+    "thinking_content": "",
+    "evaluation": {
+      "accuracy": null,
+      "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)",
+      "coordinate_eval": {
+        "predictions_count": 1,
+        "gt_count": 1,
+        "point_in_bbox_hits": 1,
+        "point_hit_rate": 1.0,
+        "gt_coverage_rate": 1.0,
+        "mean_iou": null,
+        "matches": [
+          {
+            "pred_index": 0,
+            "pred_center": [
+              920,
+              105
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 0,
+            "matched_gt_label": "League of Legends Community (right panel)",
+            "iou": null
+          }
+        ],
+        "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)"
+      }
+    },
+    "marked_image": "E:\\MyCode3\\ARKAPITEST\\output\\POS_001a_qwen3-vl-32b-instruct_marked.png"
+  },
+  {
+    "model": "qwen3-vl-32b-instruct",
+    "test_id": "POS_004",
+    "test_name": "搜索输入框定位(点击输入框)",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 1.35,
+    "usage": {
+      "prompt_tokens": 1898,
+      "completion_tokens": 17,
+      "total_tokens": 1915
+    },
+    "content": "<point x1=\"204\" y1=\"59\" />",
+    "thinking_content": "",
+    "evaluation": {
+      "accuracy": null,
+      "details": "未解析到任何 <point> 坐标",
+      "coordinate_eval": {
+        "predictions_count": 0,
+        "gt_count": 1,
+        "point_in_bbox_hits": 0,
+        "point_hit_rate": 0.0,
+        "gt_coverage_rate": 0.0,
+        "mean_iou": null,
+        "matches": [],
+        "details": "未解析到任何 <point> 坐标"
+      }
+    },
+    "marked_image": null
+  }
+]

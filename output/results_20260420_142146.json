@@ -1,0 +1,40 @@
+[
+  {
+    "model": "doubao-1-5-ui-tars-250428",
+    "test_id": "POS_001",
+    "test_name": "单个群组图标定位",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "ERROR",
+    "error": "Error code: 404 - {'error': {'code': 'InvalidEndpointOrModel.NotFound', 'message': 'The model or endpoint doubao-1-5-ui-tars-250428 does not exist or you do not have access to it. Request id: 02177666610940782d9a25dc868c42aa6f70cb2f9d1da6ab96b07', 'param': '', 'type': 'Not Found'}}, request_id: 20260420142146VJMWZsbkwhNfbe2C507b",
+    "response_time": 0,
+    "usage": {},
+    "content": "",
+    "thinking_content": "",
+    "evaluation": {
+      "accuracy": null,
+      "details": "错误: Error code: 404 - {'error': {'code': 'InvalidEndpointOrModel.NotFound', 'message': 'The model or endpoint doubao-1-5-ui-tars-250428 does not exist or you do not have access to it. Request id: 02177666610940782d9a25dc868c42aa6f70cb2f9d1da6ab96b07', 'param': '', 'type': 'Not Found'}}, request_id: 20260420142146VJMWZsbkwhNfbe2C507b"
+    },
+    "marked_image": null
+  },
+  {
+    "model": "doubao-1-5-ui-tars-250428",
+    "test_id": "POS_002",
+    "test_name": "多个群组图标定位",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "ERROR",
+    "error": "Error code: 404 - {'error': {'code': 'InvalidEndpointOrModel.NotFound', 'message': 'The model or endpoint doubao-1-5-ui-tars-250428 does not exist or you do not have access to it. Request id: 02177666611163482d9a25dc868c42aa6f70cb2f9d1da6ad712e6', 'param': '', 'type': 'Not Found'}}, request_id: 20260420142149itVljCOTKLcm3U4Uu8c6",
+    "response_time": 0,
+    "usage": {},
+    "content": "",
+    "thinking_content": "",
+    "evaluation": {
+      "accuracy": null,
+      "details": "错误: Error code: 404 - {'error': {'code': 'InvalidEndpointOrModel.NotFound', 'message': 'The model or endpoint doubao-1-5-ui-tars-250428 does not exist or you do not have access to it. Request id: 02177666611163482d9a25dc868c42aa6f70cb2f9d1da6ad712e6', 'param': '', 'type': 'Not Found'}}, request_id: 20260420142149itVljCOTKLcm3U4Uu8c6"
+    },
+    "marked_image": null
+  }
+]

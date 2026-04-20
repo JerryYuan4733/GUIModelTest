@@ -1,0 +1,21 @@
+[
+  {
+    "model": "doubao-1-5-thinking-vision-pro-250428",
+    "test_id": "POS_001",
+    "test_name": "单个群组图标定位",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "ERROR",
+    "error": "Error code: 404 - {'error': {'code': 'InvalidEndpointOrModel.NotFound', 'message': 'The model or endpoint doubao-1-5-thinking-vision-pro-250428 does not exist or you do not have access to it. Request id: 0217766657306688cf12c1a4b092384500fba0fc49677b09ff906', 'param': '', 'type': 'Not Found'}}, request_id: 202604201415284kejhgv59ksJzphfClqT",
+    "response_time": 0,
+    "usage": {},
+    "content": "",
+    "thinking_content": "",
+    "evaluation": {
+      "accuracy": null,
+      "details": "错误: Error code: 404 - {'error': {'code': 'InvalidEndpointOrModel.NotFound', 'message': 'The model or endpoint doubao-1-5-thinking-vision-pro-250428 does not exist or you do not have access to it. Request id: 0217766657306688cf12c1a4b092384500fba0fc49677b09ff906', 'param': '', 'type': 'Not Found'}}, request_id: 202604201415284kejhgv59ksJzphfClqT"
+    },
+    "marked_image": null
+  }
+]

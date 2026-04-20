@@ -1,0 +1,78 @@
+[
+  {
+    "model": "qwen3-vl-flash-2026-01-22",
+    "test_id": "POS_001a",
+    "test_name": "单个图标定位(右侧详情面板)",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 3.907,
+    "usage": {
+      "prompt_tokens": 888,
+      "completion_tokens": 14,
+      "total_tokens": 902
+    },
+    "content": "<point>925\" 90</point>",
+    "thinking_content": "",
+    "evaluation": {
+      "accuracy": null,
+      "details": "未解析到任何 <point> 坐标",
+      "coordinate_eval": {
+        "predictions_count": 0,
+        "gt_count": 1,
+        "point_in_bbox_hits": 0,
+        "point_hit_rate": 0.0,
+        "gt_coverage_rate": 0.0,
+        "mean_iou": null,
+        "matches": [],
+        "details": "未解析到任何 <point> 坐标"
+      }
+    },
+    "marked_image": null
+  },
+  {
+    "model": "gui-plus-2026-02-26",
+    "test_id": "POS_001a",
+    "test_name": "单个图标定位(右侧详情面板)",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 1.326,
+    "usage": {
+      "prompt_tokens": 1884,
+      "completion_tokens": 67,
+      "total_tokens": 1951
+    },
+    "content": "Action: 点击右侧频道详情面板顶部的“League of Legends Community”频道圆形大头像（紫色背景，位于订阅数上方）。\n<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"left_click\", \"coordinate\": [920, 100]}}\n</tool_call>",
+    "thinking_content": "",
+    "evaluation": {
+      "accuracy": null,
+      "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)",
+      "coordinate_eval": {
+        "predictions_count": 1,
+        "gt_count": 1,
+        "point_in_bbox_hits": 1,
+        "point_hit_rate": 1.0,
+        "gt_coverage_rate": 1.0,
+        "mean_iou": null,
+        "matches": [
+          {
+            "pred_index": 0,
+            "pred_center": [
+              920,
+              100
+            ],
+            "pred_bbox": null,
+            "matched_gt_index": 0,
+            "matched_gt_label": "League of Legends Community (right panel)",
+            "iou": null
+          }
+        ],
+        "details": "点命中 1/1 (100.0%), GT覆盖 1/1 (100.0%)"
+      }
+    },
+    "marked_image": "E:\\MyCode3\\ARKAPITEST\\output\\POS_001a_gui-plus_marked.png"
+  }
+]

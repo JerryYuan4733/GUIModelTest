@@ -1,0 +1,46 @@
+[
+  {
+    "model": "doubao-seed-1-6-vision-250815",
+    "test_id": "POS_001",
+    "test_name": "单个群组图标定位",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 3.351,
+    "usage": {
+      "prompt_tokens": 1166,
+      "completion_tokens": 100,
+      "total_tokens": 1266
+    },
+    "content": "<point>925 95</point>",
+    "thinking_content": "用户现在需要找到“League of Legends Community”这个群组/频道的图标（头像）位置，根据图片显示，右侧的频道信息区域里，头像在紫色背景的上方，所以看坐标的话，应该是<point>925 95</point>，需要确认这个位置是否正确。从图中右侧的频道卡片，头像在顶部，所以中心坐标应该是这个。",
+    "evaluation": {
+      "accuracy": null,
+      "details": ""
+    },
+    "marked_image": "E:\\MyCode3\\ARKAPITEST\\output\\POS_001_seed-1-6-vision_marked.png"
+  },
+  {
+    "model": "doubao-1-5-vision-pro-32k-250115",
+    "test_id": "POS_001",
+    "test_name": "单个群组图标定位",
+    "category": "定位能力",
+    "enable_thinking": false,
+    "thinking_applied": false,
+    "status": "OK",
+    "response_time": 2.043,
+    "usage": {
+      "prompt_tokens": 1125,
+      "completion_tokens": 20,
+      "total_tokens": 1145
+    },
+    "content": "<point>843 70 906 146</point>",
+    "thinking_content": "",
+    "evaluation": {
+      "accuracy": null,
+      "details": ""
+    },
+    "marked_image": null
+  }
+]
